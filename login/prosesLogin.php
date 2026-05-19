@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 session_start();
 include '../koneksi.php'; // koneksi ke database
 
@@ -14,6 +17,6 @@ if($user && password_verify($password, $user['password'])){
     header("Location: ../index.php");
     exit;
 } else {
-    echo "Login gagal. <a href='../login.php'>Coba lagi</a>";
+    echo "Login gagal. <a href='login.php'>Coba lagi</a>";
 }
 ?>

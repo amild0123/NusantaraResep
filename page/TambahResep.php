@@ -18,6 +18,13 @@
         <!-- ======================
              HEADER
         ======================= -->
+        <!-- judul -->
+         <div class="judulResep">
+
+            <textarea name="judul"
+                      placeholder="Masukan judul makanan anda"></textarea>
+
+        </div>
 
         <div class="header-section">
 
@@ -37,6 +44,7 @@
                 </span>
 
             </label>
+            
 
             <!-- INPUT JUDUL -->
             <input type="text"

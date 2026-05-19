@@ -8,7 +8,7 @@
 
             <!-- Menu Tengah -->
             <ul class="nav-menu">
-                <li><a class="active" href="?page=kategori&kategori=minuman">Minuman</a></li>
+                <li><a href="?page=kategori&kategori=minuman">Minuman</a></li>
                 <li><a class="nav-link" href="?page=kategori&kategori=makanan">Makanan Berat</a></li>
                 <li><a class="nav-link" href="?page=kategori&kategori=camilan">Makanan Ringan</a></li>
             </ul>

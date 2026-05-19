@@ -1,5 +1,5 @@
    
-<div class="main-content">
+<div class="main-content" >
 
 <?php
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
@@ -20,7 +20,7 @@ elseif($page == "kategori"){
     include "kategori.php";
 }
 else{
-    echo "<h1>Halaman tidak ditemukan 😭</h1>";
+    include "page/Home.php";
 }
 ?>
 
