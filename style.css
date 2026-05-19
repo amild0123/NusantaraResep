@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* NAVBAR */
+.navbar-custom{
+    width: 100%;
+    height: 75px;
+    background: #d3a679;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+    z-index: 9999;
+}
+
+/* LOGO */
+.logo img{
+    width: 130px;
+}
+
+/* MENU */
+.nav-menu{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-menu .active{
+    background: #c79a6f;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+/* GARIS TIGA */
+.menu-toggle{
+    width: 35px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-toggle span{
+    width: 100%;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    position: fixed;
+    top: 75px;
+    right: -330px;
+    width: 330px;
+    height: 100vh;
+    background: #ececec;
+    transition: 0.4s;
+    z-index: 99999;
+
+}
+
+/* Saat aktif */
+.sidebar.active{
+    right: 0;
+}
+
+/* MENU SIDEBAR */
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menu a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    text-decoration: none;
+    color: black;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sidebar-menu a:first-child{
+    background: #d9d9d9;
+}
+
+.sidebar-menu img{
+    width: 35px;
+}
+
+/*=============
+Tambah Resep
+=============*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* =========================
+   WRAPPER
+========================= */
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header-section{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 80px;
+}
+
+/* =========================
+   SAMPUL
+========================= */
+
+.sampul-box{
+    width: 230px;
+    height: 230px;
+
+    background: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    position: relative;
+}
+
+#textPreview{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gambarPreview{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: none;
+}
+
+/* =========================
+   JUDUL
+========================= */
+
+.judul-input{
+    flex: 1;
+    height: 120px;
+
+    border: 2px solid #666;
+
+    padding: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    outline: none;
+
+    background: white;
+}
+
+/* =========================
+   STEP SECTION
+========================= */
+
+.step-section{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    margin-bottom: 50px;
+}
+
+/* =========================
+   BOX UPLOAD
+========================= */
+
+.upload-box{
+    width: 220px;
+    height: 220px;
+
+    background: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.upload-box span{
+    font-size: 120px;
+    line-height: 1;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.step-section textarea{
+    flex: 1;
+
+    height: 60px;
+
+    border-radius: 30px;
+    border: 1px solid #666;
+
+    padding: 18px 20px;
+
+    resize: none;
+    outline: none;
+
+    font-size: 15px;
+}
+
+/* =========================
+   KATEGORI
+========================= */
+
+.kategori-box{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.kategori-box select{
+    width: 250px;
+
+    padding: 12px;
+
+    border-radius: 20px;
+
+    outline: none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button-box{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button-box button{
+    background: #B5C18E;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 15px 40px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.button-box button:hover{
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 900px){
+
+    .header-section{
+        flex-direction: column;
+    }
+
+    .step-section{
+        flex-direction: column;
+    }
+
+    .upload-box{
+        width: 100%;
+    }
+
+}
+
+/* =========================
+    AKUN
+========================= */
+.akun-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resep-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.resep-card {
+  background: #F5F5F0;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #D9534F;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.kosong {
+  text-align: center;
+  color: #777;
+}
+
+
+/* =========================
+    login AKUN
+========================= */
+/* Gunakan class khusus agar tidak bentrok dengan page lain */
+.login-page {
+  background-color: #F5F5F0; /* krem lembut */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container login */
+.login-container{
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Judul */
+.login-container h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5A3E2B; /* coklat hangat */
+}
+
+/* Label */
+.login-container label{
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input */
+.login-container input{
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Tombol */
+.login-container .btn-green{
+  background-color: #A7C7A7;
+  color: #000;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .btn-green:hover{
+  background-color: #8BBF8B;
+}
+
+/* Link daftar */
+.login-container .register-text{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container .register-text a {
+  color: #5A3E2B;
+  text-decoration: none;
+}
+
+.login-container .register-text a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+    Register AKUN
+========================= */
+/* Register page pakai style login */
+.login-page {
+  background-color: #F5F5F0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5A3E2B;
+}
+
+.login-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-container .btn-green {
+  background-color: #A7C7A7;
+  color: #000;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .btn-green:hover {
+  background-color: #8BBF8B;
+}
+
+.login-container .register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container .register-text a {
+  color: #5A3E2B;
+  text-decoration: none;
+}
+
+.login-container .register-text a:hover {
+  text-decoration: underline;
+}
