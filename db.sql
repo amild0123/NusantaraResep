@@ -20,6 +20,7 @@
 
 CREATE TABLE IF NOT EXISTS `resep` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
   `judul` varchar(255) DEFAULT NULL,
   `sampul` varchar(100) DEFAULT NULL,
   `deskripsi` text,
