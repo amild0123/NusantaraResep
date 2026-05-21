@@ -1,7 +1,7 @@
 <!-- dataAkun.php -->
 <?php
 session_start();
-include 'koneksi.php'; // koneksi ke database
+include '../koneksi.php'; // koneksi ke database
 
 $user_id = $_SESSION['user_id'];
 $query_user = mysqli_query($conn, "SELECT * FROM users WHERE id='$user_id'");
