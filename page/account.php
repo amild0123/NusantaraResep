@@ -3,12 +3,10 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
-include '../koneksi.php'; // koneksi ke database
-
+include 'koneksi.php'; // koneksi ke database
 $user_id = $_SESSION['user_id'];
 $query_users = mysqli_query($conn, "SELECT * FROM users WHERE id='$user_id'");
-$user = mysqli_fetch_assoc($query_user);
+$user = mysqli_fetch_assoc($query_users);
 
 $query_resep = mysqli_query($conn, "SELECT * FROM resep WHERE user_id='$user_id'");
 ?>
