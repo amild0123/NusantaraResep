@@ -4,8 +4,8 @@ include 'koneksi.php';
 
 /* TEXT */
 
+$user_id = $_SESSION['user_id'];
 $judul = $_POST['judul'];
-
 $langkah1 = $_POST['langkah1'];
 $langkah2 = $_POST['langkah2'];
 $langkah3 = $_POST['langkah3'];
@@ -88,7 +88,7 @@ $query = mysqli_query($conn,
 "INSERT INTO resep VALUES(
 
     NULL,
-
+    '$user_id',
     '$judul',
     '$sampul',
     
@@ -119,7 +119,7 @@ if($query){
 
     <script>
 
-    alert('Resep berhasil ditambahkan 😭🔥');
+    alert('Resep berhasil ditambahkan');
 
     window.location='index.php?page=Home';
 

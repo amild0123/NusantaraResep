@@ -1,10 +1,13 @@
 <!-- dataAkun.php -->
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 include '../koneksi.php'; // koneksi ke database
 
 $user_id = $_SESSION['user_id'];
-$query_user = mysqli_query($conn, "SELECT * FROM users WHERE id='$user_id'");
+$query_users = mysqli_query($conn, "SELECT * FROM users WHERE id='$user_id'");
 $user = mysqli_fetch_assoc($query_user);
 
 $query_resep = mysqli_query($conn, "SELECT * FROM resep WHERE user_id='$user_id'");
