@@ -37,10 +37,10 @@ CREATE TABLE IF NOT EXISTS `resep` (
 
 -- Membuang data untuk tabel nusantara_resep.resep: ~3 rows (lebih kurang)
 DELETE FROM `resep`;
-INSERT INTO `resep` (`id`, `judul`, `sampul`, `deskripsi`, `kategori`, `langkah1`, `langkah2`, `langkah3`, `langkah4`, `gambar1`, `gambar2`, `gambar3`, `gambar4`) VALUES
-	(14, '', 'Cuplikan layar 2026-02-17 085204.png', NULL, 'design', 'web', 'apk', '', '', '', '', '', 'makanan'),
-	(15, 'mie ayam', 'Cuplikan layar 2026-01-24 113557.png', NULL, 'oww oww', 'oke', 'yaya', 'apaaja', '', '', '', '', 'minuman'),
-	(16, 'buka dulu', 'Cuplikan layar 2026-01-24 171403.png', NULL, 'minuman', 'wiejriaew', 'kjFHJKWR', 'JKSFES', 'JSIFK', '', '', '', '');
+INSERT INTO `resep` (`id`, `user_id`, `judul`, `sampul`, `deskripsi`, `kategori`, `langkah1`, `langkah2`, `langkah3`, `langkah4`, `gambar1`, `gambar2`, `gambar3`, `gambar4`) VALUES
+	(14, 1, 'Cuplikan layar 2026-02-17 085204.png', NULL, 'design', 'web', 'apk', '', '', '', '', '', 'makanan'),
+	(15, 1, 'mie ayam', 'Cuplikan layar 2026-01-24 113557.png', NULL, 'oww oww', 'oke', 'yaya', 'apaaja', '', '', '', 'minuman'),
+	(16, 1, 'buka dulu', 'Cuplikan layar 2026-01-24 171403.png', NULL, 'minuman', 'wiejriaew', 'kjFHJKWR', 'JKSFES', 'JSIFK', '', '', '');
 
 -- membuang struktur untuk table nusantara_resep.users
 CREATE TABLE IF NOT EXISTS `users` (
