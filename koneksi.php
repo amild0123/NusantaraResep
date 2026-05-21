@@ -1,9 +1,9 @@
 <?php
 $conn = mysqli_connect(
     "localhost",
-    "root",
-    "",
-    "nusantara_resep"
+    "hexacode_NusantaraResep",
+    "nusantararesep123",
+    "hexacode_nusantara_resep"
 );
 if(!$conn){
     die("Koneksi gagal");
