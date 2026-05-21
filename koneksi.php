@@ -2,7 +2,7 @@
 $conn = mysqli_connect(
     "localhost",
     "hexacode_NusantaraResep",
-    "nusantararesep123",
+    "Nusantara123",
     "hexacode_nusantara_resep"
 );
 if(!$conn){
