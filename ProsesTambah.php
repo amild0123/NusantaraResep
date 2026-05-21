@@ -6,6 +6,7 @@ include 'koneksi.php';
 
 $user_id = $_SESSION['user_id'];
 $judul = $_POST['judul'];
+$deskripsi = $_POST['deskripsi'];
 $langkah1 = $_POST['langkah1'];
 $langkah2 = $_POST['langkah2'];
 $langkah3 = $_POST['langkah3'];
@@ -91,7 +92,7 @@ $query = mysqli_query($conn,
     '$user_id',
     '$judul',
     '$sampul',
-    
+    '$deskripsi',
     '$kategori',
     
     '$langkah1',
@@ -109,36 +110,22 @@ $query = mysqli_query($conn,
 );
 
 
-/* ========================= */
-/* CEK */
-/* ========================= */
-
+/* ========================= 
+        CEK 
+   ========================= */
 if($query){
-
     echo "
-
     <script>
-
     alert('Resep berhasil ditambahkan');
-
     window.location='index.php?page=Home';
-
     </script>
-
     ";
-
 }else{
-
     echo "
-
     <script>
-
     alert('Gagal tambah resep');
-
     </script>
-
     ";
-
 }
 
 ?>

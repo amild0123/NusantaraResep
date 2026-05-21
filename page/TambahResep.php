@@ -20,9 +20,10 @@
         ======================= -->
         <!-- judul -->
          <div class="judulResep">
-
-            <textarea name="judul"
-                      placeholder="Masukan judul makanan anda"></textarea>
+            <input type="text"
+                   name="judul"
+                   class="judul-input"
+                   placeholder="Tuliskan Deskripsi Makanan/Minuman Anda">
 
         </div>
 
@@ -48,7 +49,7 @@
 
             <!-- INPUT JUDUL -->
             <input type="text"
-                   name="judul"
+                   name="deskripsi"
                    class="judul-input"
                    placeholder="Tuliskan Deskripsi Makanan/Minuman Anda">
 
