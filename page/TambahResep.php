@@ -9,7 +9,7 @@
 <body>
     
 
-<form action="prosesTambah.php"
+<form action="../prosesTambah.php"
       method="POST"
       enctype="multipart/form-data">
 

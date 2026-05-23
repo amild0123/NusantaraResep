@@ -19,9 +19,6 @@ $query_resep = mysqli_query($conn, "SELECT * FROM resep WHERE user_id='$user_id'
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <h1>Resep <span>Nusantara</span></h1>
-  </header>
 
   <section class="akun-container">
     <div class="profile">
